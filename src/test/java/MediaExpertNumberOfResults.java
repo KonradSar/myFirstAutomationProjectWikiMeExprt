@@ -38,9 +38,6 @@ public class MediaExpertNumberOfResults extends Variables {
         //pobranie elementów listy i sprawdzenie czy jest na stronie 30 elementow
         Assert.assertEquals(true, checIfListSizeIsBiggerThanZero(webDriver, By.xpath(Variables.XPATHTOLISTFORMEDIAEKSPERT)));
         Assert.assertEquals(Strings.THERESNOT30ITEMS, getListSize(webDriver, By.xpath(Variables.XPATHTOLISTFORMEDIAEKSPERT)), 30);
-        //klik na rozwijane menu i wybor pozycji
-        Select dropdown = new Select(webDriver.findElement(By.xpath(Variables.XPATHTODROPDOWNMENU)));
-        dropdown.selectByIndex(2);
 
     }
 
